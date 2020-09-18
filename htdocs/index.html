@@ -5,14 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Youtube Mobile</title>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
-	<link rel="stylesheet" href="/static/css/style.css">
+	<link rel="stylesheet" href="./static/css/style.css">
 </head>
 <body>
-	<h1>Apache web page</h1>
 	<header>
 		<div class="logo">
 			<i class="fab fa-youtube"></i>
-			<span class="title"></span>
+			<span class="title">Youtube</span>
 		</div>
 		<div class="icons">
 			<i class="fas fa-search"></i>
@@ -21,84 +20,86 @@
 	</header>
 	<section class="player">
 		<video controls autoplay="autoplay" muted="muted">
-			<source src="/video/earth.mp4" type="video/mp4">
+			<source src="./video/earth.mp4" type="video/mp4">
 		</video>
 	</section>
-	<section class="info">
-		<div class="metadata">
-			<ul class="hashtags">
-				<li>#Youtube</li>
-				<li>#Amy</li>
-				<li>#earth</li>
-			</ul>
-			<div class="titlAndButton">
-				<span class="title">
-					>Clone Coding: 유튜브 따라만들기
-				</span>
-				<button class="moreBtn">
-
-				</button>
-			</div>
-			<div class="views">
-				<span class="views">1M views 1 month ago</span>
-			</div>
-		</div>
-		<ul class="actions">
-			<li>
-				<button><i class="fas fa-thumbs-up"></i></button>
-			</li>
-			<li>
-				<button><i class="fas fa-thumbs-down"></i></button>
-			</li>
-			<li>
-				<button><i class="fas fa-share"></i></button>
-			</li>
-			<li>
-				<button><i class="fas fa-plus"></i></button>
-			</li>
-			<li>
-				<button><i class="fas fa-flag"></i></button>
-			</li>
-		</ul>
-		<div class="channel">
+	<div class="infoAndUpNext">
+		<section class="info">
 			<div class="metadata">
-				<img src="/image/avatar.png" alt=""/>
-				<div class="info">
-					<span class="name">Penguin</span>
-					<span class="subscribers">1M subscribers</span>
+				<ul class="hashtags">
+					<li>#Youtube</li>
+					<li>#Amy</li>
+					<li>#earth</li>
+				</ul>
+				<div class="titleAndButton">
+					<span class="title">
+						>Clone Coding: 유튜브 따라만들기 클론코딩 유튜브 사이트 따라 만들기(HTML+CSS 연습편, 웹 포트폴리오 | 	프론트엔드 개발자 입문편: HTML, CSS, Javascript
+					</span>
+					<button class="moreBtn">
+						<i class="fas fa-caret-down"></i>
+					</button>
 				</div>
-			</div>	
-			<button class="subscribe">subscribe</button>
-		</div>
-	</section>
-	<setion class="UpNext">
-		<span class="title">Up next</span>
-		<ul>
-			<li class="item">
-				<img src="/image/mercury.jpg" alt="">
-				<div class="info">
-					<span class="title">mercury</span>
-					<span class="name">amy</span>
-					<span class="views">82K views</span></div>
-				<button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-			</li>
-			<li class="item">
-				<img src="/image/venus.jpg" alt="">
-				<div class="info">
-					<span class="title">venus</span>
-					<span class="name">amy</span>
-					<span class="views">71K views</span></div>
-				<button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-			</li>
-			<li class="item">
-				<img src="/image/jupiter.jpg" alt="">
-				<div class="info">
-					<span class="title">jupiter</span>
-					<span class="name">amy</span>
-					<span class="views">106K views</span></div>
-				<button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-			</li>
-		</ul>
-	</setion>
+				<div class="views">
+					<span class="views">1M views 1 month ago</span>
+				</div>
+			</div>
+			<ul class="actions">
+				<li>
+					<button><i class="active fas fa-thumbs-up"></i>1K</button>
+				</li>
+				<li>
+					<button><i class="fas fa-thumbs-down"></i>0</button>
+				</li>
+				<li>
+					<button><i class="fas fa-share"></i>Share</button>
+				</li>
+				<li>
+					<button><i class="fas fa-plus"></i>Save</button>
+				</li>
+				<li>
+					<button><i class="fas fa-flag"></i>Report</button>
+				</li>
+			</ul>
+			<div class="channel">
+				<div class="metadata">
+					<img src="./image/avatar.png" alt=""/>
+					<div class="info">
+						<span class="name">Penguin</span>
+						<span class="subscribers">1M subscribers</span>
+					</div>
+				</div>	
+				<button class="subscribe">subscribe</button>
+			</div>
+		</section>
+		<setion class="upNext">
+			<span class="title">Up next</span>
+			<ul>
+				<li class="item">
+					<div class="img"><img src="./image/mercury.jpg" alt=""></div>
+					<div class="info">
+						<span class="title">mercury</span>
+						<span class="name">amy</span>
+						<span class="views">82K views</span></div>
+					<button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+				</li>
+				<li class="item">
+					<div class="img"><img src="./image/venus.jpg" alt=""></div>
+					<div class="info">
+						<span class="title">venus</span>
+						<span class="name">amy</span>
+						<span class="views">71K views</span></div>
+					<button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+				</li>
+				<li class="item">
+					<div class="img"><img src="./image/jupiter.jpg" alt=""></div>
+					<div class="info">
+						<span class="title">jupiter</span>
+						<span class="name">amy</span>
+						<span class="views">106K views</span></div>
+					<button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+				</li>
+			</ul>
+		</setion>
+	</div>
 </body>
 </html>
